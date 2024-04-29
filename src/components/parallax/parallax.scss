@@ -17,10 +17,6 @@
             text-align: center;
         }
 
-        @include tablet{
-            font-size: 100px;
-            text-align: center;
-        }
     }
 
     .mountains{
@@ -37,15 +33,10 @@
             background-repeat: no-repeat;
         }
 
-        @include tablet{
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
 
     }
 
     .planets{
-        background-image: url("./planets.png");
         height: 100%;
         width: 100%;
         background-size: cover;
@@ -58,15 +49,9 @@
             background-repeat:no-repeat;
         }
 
-        
-        @include tablet{
-            background-size: contain;
-            background-repeat:no-repeat;
-        }
     }
 
     .stars{
-        background-image: url("./stars.png");
         height: 100%;
         width: 100%;
         background-size: cover;

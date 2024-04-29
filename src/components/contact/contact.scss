@@ -14,11 +14,6 @@
         flex-direction: column;
     }
 
-    @include tablet{
-        padding: 20px;
-        width: 100%;
-        flex-direction: column;
-    }
     
     .textContainer{
         flex: 1;
@@ -31,12 +26,6 @@
           text-align: center;
           align-items: center;
         }
-
-        @include tablet{
-            margin-top: 100px;
-            text-align: center;
-            align-items: center;
-          }
 
         h1{
             font-size: 90px;
@@ -57,11 +46,6 @@
         position: relative;
 
         @include mobile{
-            padding: 50px;
-            width: 100%;
-        }
-
-        @include tablet{
             padding: 50px;
             width: 100%;
         }
@@ -97,9 +81,6 @@
                     padding: 10px;
                 }
 
-                @include tablet{
-                    padding: 20px;
-                }
             }
 
             button{
@@ -119,9 +100,7 @@
                     padding: 10px;
                 }
 
-                @include tablet{
-                    padding: 20px;
-                }
+
             }
         }
 

@@ -12,6 +12,16 @@
     color: orange;
     font-size: 35px;
 
+    @include desktop{
+        padding-top: 100px;
+        font-size: 55px;
+
+    }
+    @include tablet{
+        padding-top: 80px;
+        font-size: 35px;
+
+    }
     @include mobile{
         padding-top: 80px;
         font-size: 25px;
@@ -44,6 +54,18 @@
         align-items: center;
         gap: 50px;
 
+        @include desktop{
+            padding-top: 400px;
+            flex-direction: column;
+            gap: 5px;
+        }
+        @include tablet{
+            padding-top: 200px;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        
         @include mobile{
             padding-top: 175px;
             flex-direction: column;
@@ -55,6 +77,14 @@
             flex: 1;
             height: 50%;
 
+            @include desktop{
+                width: 85%;
+                max-height: 500px;
+            }
+            @include tablet{
+                width: 75%;
+                max-height: 300px;
+            }
             @include mobile{
                 width: 70%;
                 max-height: 170px;
@@ -75,6 +105,22 @@
             flex-direction: column;
             gap: 30px;
 
+            
+            @include desktop{
+                transform: none !important;
+                gap: 16px;
+                padding: 20px;
+                align-items: center;
+                text-align: center;
+            }
+            @include tablet{
+                transform: none !important;
+                gap: 16px;
+                padding: 15px;
+                align-items: center;
+                text-align: center;
+            }
+
             @include mobile{
                 transform: none !important;
                 gap: 16px;
@@ -88,6 +134,12 @@
             h2{
                 font-size: 72px;
 
+                @include desktop{
+                    font-size: 82px;
+                }
+                @include tablet{
+                    font-size: 62px;
+                }
                 @include mobile{
                     font-size: 32px;
                 }
@@ -98,6 +150,15 @@
             p{
                 color: lightgray;
                 font-size: 20px;
+
+                
+                @include desktop{
+                    font-size: 26px;
+                }
+
+                @include tablet{
+                    font-size: 23px;
+                }
 
                 @include mobile{
                     font-size: 13px;
@@ -113,6 +174,14 @@
                 border-radius: 10px;
                 cursor: pointer;
 
+                @include desktop{
+                    padding: 20px;
+                    width: 120px;
+                }
+                @include tablet{
+                    padding: 15px;
+                    width: 120px;
+                }
                 @include mobile{
                     padding: 5px;
                     width: 100px;

@@ -21,10 +21,16 @@
             gap: 15px;
             cursor: pointer;
                     
+            @include desktop{
+                margin: 20px;
+            }
             @include mobile{
                 margin: 10px;
             }
 
+            @include tablet{
+                margin-right: 15px; ;
+            }
 
         }
     }

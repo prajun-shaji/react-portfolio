@@ -12,6 +12,14 @@
     h1{
         font-size: 100px;
 
+        @include desktop{
+            font-size: 150px;
+            text-align: center;
+        }
+        @include tablet{
+            font-size: 100px;
+            text-align: center;
+        }
         @include mobile{
             font-size: 55px;
             text-align: center;
@@ -20,7 +28,6 @@
     }
 
     .mountains{
-        background-image: url("./mountains.png");
         height: 100%;
         width: 100%;
         background-size: cover;
@@ -28,6 +35,14 @@
         position: absolute;
         z-index: 3;
 
+        @include desktop{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @include tablet{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
         @include mobile{
             background-size: contain;
             background-repeat: no-repeat;
@@ -43,6 +58,15 @@
         background-position: bottom;
         position: absolute;
         z-index: 2;
+
+        @include desktop{
+            background-size: contain;
+            background-repeat:no-repeat;
+        }
+        @include tablet{
+            background-size: contain;
+            background-repeat:no-repeat;
+        }
 
         @include mobile{
             background-size: contain;

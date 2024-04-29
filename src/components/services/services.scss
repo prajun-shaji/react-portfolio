@@ -15,6 +15,16 @@
         align-self: flex-end;
         gap: 20px;
 
+        @include desktop {
+            flex-direction: column;
+            align-self: center;
+            text-align: center;
+        }
+        @include tablet {
+            flex-direction: column;
+            align-self: center;
+            text-align: center;
+        }
         @include mobile {
             flex-direction: column;
             align-self: center;
@@ -31,6 +41,18 @@
             text-align: right;
             text-transform: capitalize;
 
+            @include desktop{
+                margin-left: 400px;
+                margin-top: 90px;
+                font-size: 26px;
+                font-style: italic;
+            }
+            @include tablet{
+                margin-left: 300px;
+                margin-top: 90px;
+                font-size: 16px;
+                font-style: italic;
+            }
             @include mobile{
                 margin-left: 100px;
                 margin-top: 50px;
@@ -58,11 +80,22 @@
             align-items: center;
             gap: 36px;
 
+            @include desktop{
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            @include tablet{
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
             @include mobile{
                 flex-direction: column;
                 text-align: center;
                 gap: 20px;
             }
+
 
 
         }
@@ -73,6 +106,14 @@
             border-radius: 50px;
             object-fit: cover;
 
+            @include desktop{
+                height: 250px;
+                width: 300px;
+            }
+            @include tablet{
+                height: 150px;
+                width: 300px;
+            }
             @include mobile{
                 height: 50px;
                 width: 150px;
@@ -87,6 +128,12 @@
             font-weight: 200;
             text-transform: uppercase;
 
+            @include desktop{
+                font-size: 55px;
+            }
+            @include tablet{
+                font-size: 45px;
+            }
             @include mobile{
                 font-size: 30px;
             }
@@ -102,6 +149,17 @@
         display: flex;
         gap: 10px;
 
+        @include desktop{
+            margin-top: 23px;
+            flex-direction: column;
+            width: 70%;
+        }
+        @include tablet{
+            margin-top: 20px;
+            flex-direction: column;
+            width: 68%;
+        }
+        
         @include mobile{
             margin-top: 10px;
             flex-direction: column;
@@ -118,6 +176,14 @@
             flex-direction: column;
             justify-content: space-between;
 
+       
+            @include desktop{
+                padding: 15px;
+            }
+            @include tablet{
+                padding: 10px;
+            }
+            
             @include mobile{
                 padding: 7px;
             }
@@ -128,6 +194,16 @@
                 white-space: nowrap;
                 text-transform: uppercase;
 
+                @include desktop{
+                    text-align: center;
+                    color: lightgray;
+                    font-size: 33px;
+                }
+                @include tablet{
+                    text-align: center;
+                    color: lightgray;
+                    font-size: 26px;
+                }
                 @include mobile{
                     text-align: center;
                     color: lightgray;
@@ -140,6 +216,12 @@
                 font-style: italic;
                 font-size: 14px;
 
+                @include desktop{
+                    display: none;
+                }
+                @include tablet{
+                    display: none;
+                }
                 @include mobile{
                     display: none;
                 }

@@ -18,10 +18,10 @@ const Navbar = () => {
           PRAJUN SHAJI
         </motion.span>
         <div className="socials">
-          <a href="https://github.com/prajun-shaji">
+          <a href="https://www.instagram.com/prajunshaji/">
             <Instagram />
           </a>
-          <a href="https://www.instagram.com/prajunshaji/">
+          <a href="https://github.com/prajun-shaji">
             <GitHub />
           </a>
           <a href="https://t.me/Prajun">
